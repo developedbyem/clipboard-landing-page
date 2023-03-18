@@ -1,0 +1,28 @@
+$clr-primary-cyan: hsl(171, 66%, 44%);
+$clr-primary-blue: hsl(233, 100%, 69%);
+
+$clr-neutral-grayishBlue-800: hsl(212, 10%, 33%);
+$clr-neutral-grayishBlue-200: hsl(201, 11%, 66%);
+
+$font-size-base: 1.125rem;
+$font-Jamjuree: "Bai Jamjuree", sans-serif;
+
+@mixin m($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+@mixin btn {
+  color: #fff;
+  letter-spacing: 0.055rem;
+  border: 0;
+  border-radius: 200px;
+
+  width: 100%;
+  padding-block: 0.95rem 0.65rem;
+  margin-bottom: 1.65rem;
+
+  &:hover {
+    opacity: 75%;
+  }
+}
